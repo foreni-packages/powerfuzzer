@@ -1,15 +1,20 @@
 Source: powerfuzzer
-Section: unknown
+Section: utils
 Priority: extra
 Maintainer: Devon Kearns <dookie@kali.org>
 Build-Depends: debhelper (>= 8.0.0)
 Standards-Version: 3.9.3
-Homepage: <insert the upstream URL, if relevant>
-#Vcs-Git: git://git.debian.org/collab-maint/powerfuzzer.git
-#Vcs-Browser: http://git.debian.org/?p=collab-maint/powerfuzzer.git;a=summary
+Homepage: http://www.powerfuzzer.com/#download
+Vcs-Git: ssh://git@git.kali.org/packages/powerfuzzer.git
+Vcs-Browser: http://git.kali.org/gitweb/?p=packages/powerfuzzer.git;a=summary
 
 Package: powerfuzzer
 Architecture: all
-Depends: ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Depends: ${misc:Depends}, python, python-wxtools, python-tidylib, python-ctypeslib
+Description: Highly automated and fully customizable web fuzzer
+ Powerfuzzer is a highly automated and fully customizable web 
+ fuzzer (HTTP protocol based application fuzzer) based on 
+ many other Open Source fuzzers available and information 
+ gathered from numerous security resources and websites. It 
+ was designed to be user friendly, modern, effective and 
+ working.

@@ -1,0 +1,15 @@
+Patched powerfuzzer.py to look in /usr/share/powerfuzzer for the rest of the stuff it needs.
+--- a/powerfuzzer.py
++++ b/powerfuzzer.py
+@@ -17,8 +17,10 @@
+ # along with this program; if not, write to the Free Software
+ # Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+ 
++import sys
++sys.path.append("/usr/share/powerfuzzer/")
+ import lswww,urllib,urllib2,urlparse,socket
+-import sys,re,getopt,os
++import re,getopt,os
+ 
+ import  wx
+ import  wx.lib.newevent
